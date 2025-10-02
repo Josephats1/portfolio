@@ -1,0 +1,436 @@
+:root {
+    --primary-color: #940765;
+    --secondary-color: #2db5df;
+    --accent-color: #ec08c6;
+    --light-color: #f8f9fa;
+    --dark-color: #1d3557;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-color);
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(255, 0, 127, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 16px;
+}
+
+#main-heading {
+    font-family: 'Edwardian Script ITC', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+   color: #54e1b6;
+}
+
+#back-button:hover {
+    background-color: #e60073;
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.5);
+    transform: scale(1.05);
+}
+
+#main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 1.8rem;
+}
+
+.subsection-heading {
+    color: var(--primary-color);
+    margin: 25px 0 15px;
+    font-size: 1.4rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Form Sections */
+.form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Grid Layouts */
+.grid-container {
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 1;
+    height: auto;
+    border-radius: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(45, 181, 223, 0.5);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Checkbox and Radio Groups */
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-label, .radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-group input, .radio-group input {
+    margin-right: 8px;
+    width: 90%;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card.selected {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 20px rgba(236, 8, 198, 0.2);
+}
+
+.card-heading {
+    margin-top: 0;
+    color: var(--dark-color);
+}
+
+.card-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-list-item::before {
+    content: "✔";
+    margin-right: 8px;
+    color: var(--secondary-color);
+}
+
+/* Emotion Cards */
+.emotion-card {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.joy { border-top-color: #ffb400; }
+.euphoria { border-top-color: #54e1b6; }
+.ecstasy { border-top-color: #c63ca2; }
+.rapture { border-top-color: #007BFF; }
+
+.joy .badge { background: #ffb400; }
+.euphoria .badge { background: #54e1b6; }
+.ecstasy .badge { background: #c63ca2; }
+.rapture .badge { background: #007BFF; }
+
+/* Rating System */
+.rating-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option input {
+    display: none;
+}
+
+.rating-option label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rating-option input:checked + label {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Submit Button */
+#submit-button {
+    display: block;
+    width: 90%;
+    max-width: 200px;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #main-heading {
+        font-size: 1.8rem;
+    }
+    
+    .section-heading {
+        font-size: 1.5rem;
+    }
+    
+    .rating-option label {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+/* Background Animation for Personal Info */
+#personal-info-section {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #940765;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+#signature {
+    color: deeppink;
+    font-family: 'Brush Script Std', cursive;
+    font-weight: bolder;
+}
+
+/* Quiz Container */
+#aura-quiz-container {
+    max-width: 800px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#aura-quiz-heading {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#aura-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.aura-card {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    border: 2px solid transparent;
+}
+
+.aura-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aura-card.selected {
+    border: 2px solid #333;
+}
+
+.aura-card-heading {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.aura-card-list {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.aura-card-list-item {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#aura-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: none;
+}
+
+#aura-result-title {
+    margin-top: 0;
+    color: #333;
+}
+
+#aura-result-description {
+    margin-bottom: 0;
+}
+
+/* Aura Colors */
+.red { background: #ffdddd; color: #8b0000; }
+.orange { background: #ffeedd; color: #cc5500; }
+.yellow { background: #ffffdd; color: #b8860b; }
+.green { background: #ddffdd; color: #006400; }
+.blue { background: #ddffff; color: #00008b; }
+.indigo { background: #ddddff; color: #4b0082; }
+.violet { background: #f5ddff; color: #9400d3; }

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Baluku | Services</title>
+  <meta name="description" content="Explore the services offered by Baluku Josephat — Software Engineering, Web Development, Filmmaking, Digital Creation, and more. Discover innovative and creative solutions for your needs.">
+  <meta name="author" content="Baluku Josephat">
+  <meta name="keywords" content="Baluku Josephat, services, software engineer, web developer, filmmaker, digital creator, IT, tech, innovation, creativity">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Baluku | Services">
+  <meta property="og:description" content="Discover the professional services of Baluku Josephat, including web development, software solutions, filmmaking, and digital content creation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.baluku.me/services">
+  <meta property="og:image" content="https://www.yourwebsite.com/images/og-services.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6H7D6pY2t1QU9Au6bUtmJjkK0WV2fhVs5V7lgFhA12eAFTp9H5klpFMzS6" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="Styles/servises.css">
+
+  <!-- Mobile Optimization -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-title" content="Baluku Services">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MpkKsl6VsBxkZpUvFzMJfunsxLjk0Quurw&s" alt="Baluku Josephats">
+      </a>
+      <button class="mobile-menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home mobile-icon"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="service.html">
+            <i class="fas fa-cogs mobile-icon"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="Projects.html">
+            <i class="fas fa-briefcase mobile-icon"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="fas fa-lightbulb mobile-icon"></i>
+            <span>About</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+ 
+    <!-- Hero Section -->
+    <div class="hero">
+      <h2>Welcome to Baluku's World of Services</h2>
+      <p>Your one-stop Solution for Coding, Companionship, Creative content and Matchmaking services and much more</p>
+    </div>
+<main>
+    <!-- Services Section -->
+    <div class="services">
+      <!-- I am a Coder -->
+      <div class="service-column">
+        <i id="icon1" class="fas fa-laptop-code"></i> 
+        <h3>I am a Coder</h3>
+        <div class="service-card">
+          <h4>Custom Web Development</h4>
+          <p>Build your dream website with modern technologies. Responsive and professional web solutions.</p>
+          <p><strong>Price:</strong> Contact for quote</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('coding')">View More</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('coding')">Get It</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>Mobile App Development</h4>
+          <p>Designing and developing mobile applications for Android and iOS platforms.</p>
+          <p><strong>Price:</strong> Contact for quote</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('app')">View More</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('app')">Book Now</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>Web Designing Course</h4>
+          <p>Full Web Designing Course: Learn as you develop a hands-on project of your choice from scratch with an expert.</p>
+          <p><strong>Price:</strong> $72 Full Course</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('web')">View More</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('web')">Talk Cody</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Virtual Companion -->
+      <div class="service-column">
+        <i id="icon2" class="fas fa-comments"></i> 
+        <h3>Virtual Companion</h3>
+        <div class="service-card">
+          <h4>Engagement Chat</h4>
+          <p>Have meaningful conversations about your interests, life, and anything that is of prominance to you.</p>
+          <p><strong>Price:</strong> $1.3 per minute <strong>Mean:</strong> Video Call</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('engagement')">View More</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('engagement')">Fun Time</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>Life Advice Session</h4>
+          <p>I'm here to provide guidance on self-development, overcoming life's hurdles, and various other facets of existence.</p>
+          <p><strong>Price:</strong> Contact for quote</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('life')">View More</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('life')">Get Session</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>Entertainment Chat</h4>
+          <p>Boredom or Loneliness...? Let's talk about movies, music, or hobbies in a friendly environment.</p>
+          <p><strong>Price:</strong> $1.3 per minute <strong>Mean:</strong> Video Call</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('entertain')">View More</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('entertain')">We Jazz</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LoveMatchMaker -->
+      <div class="service-column">
+        <i id="icon" class="fas fa-heart"></i> 
+        <h3>Dating Coach</h3>
+        <div class="service-card">
+          <h4>Love-Match</h4>
+          <p>I will find you compatible matches based on your values and goals from over 3.1 million people.</p>
+          <p><strong>Price:</strong> Free</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('loveconnect')">View More</button>
+            <a href="love.html">
+              <button class="book-now" >Get a Lover</button>
+            </a>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>Gift Concierge</h4>
+          <p>Share love by surprising your loved one with a gift via me! I'll help you choose, wrap, and deliver.</p>
+          <p><strong>Price:</strong> Contact for quote</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('gift')">View More</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('gift')">Gift Now</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <h4>GoSuggest</h4>
+          <p>Let me recommend you a place based on your desires plus being your Travel Guide or Escort.</p>
+          <p><strong>Price:</strong> $7 for two vouches</p>
+          <div class="button-container">
+            <button class="view-more" onclick="openPopup('go')">View More</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('go')">Locate Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- NEW SHIPPING SECTION -->
+    <section class="shipping-section">
+      <!-- Rotating Logos Ring -->
+      <div class="shipping-logos">
+        <div class="shipping-logos-ring">
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/amazon.webp" alt="amazon" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/fedex.webp" alt="fedex" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/ebay.webp" alt="ebay" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/yahoo.webp" alt="yahoojapan" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/rakuten.webp" alt="Rakuten" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/ups.webp" alt="ups" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/ebay.webp" alt="ebay" /></div>
+          <div class="shipping-logo"><img src="https://josephats1.github.io/Me/images/alibaba.webp" alt="jumia" /></div>
+        </div>
+      </div>
+
+      <div class="shipping-content">
+        <h1 class="shipping-title">I'm a Shipping Agent</h1>
+        <p class="shipping-subtitle">Do you want anything From or To anywhere? I do global deliveries.</p>
+        
+        <p class="shipping-description">
+          I deliver anything from anywhere globally. Whether it's e-commerce, freight, or personal packages, I provide fast, secure, and professional logistics solutions.
+        </p>
+        
+        <button class="shipping-button">Let's Ship It</button>
+      </div>
+ 
+    </section>
+    
+    <div class="sub">
+      <p>I do<span id="V1"> Even More</span> <br> Get <span id="V2">Everything</span> done<span id="V3"> For You</span></p>
+    </div>
+    
+    <section class="services1">
+      <div class="container1">
+<!-- Screenwriter -->
+<div class="service-card1">
+  <p>🎥</p>
+  <h3>Screenwriter</h3>
+  <p>Let's work together to develop a script that captures your audience's imagination and elevates your project.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('content-creator')">View More</button>
+    <button class="btn1 btn-secondary1" onclick="sendWhatsApp(this)">Get Script</button>
+  </div>
+</div>
+
+<!-- Song Writer -->
+<div class="service-card1">
+  <p>🎵</p>
+  <h3>Song Writer</h3>
+  <p>We’ll create powerful lyrics and melodies that connect deeply with your audience.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('song-writer')">View More</button>
+    <button class="btn1 btn-secondary1" onclick="sendWhatsApp(this)">Get Lyrics</button>
+  </div>
+</div>
+
+<!-- Graphic Designer -->
+<div class="service-card1">
+  <p>🎨</p>
+  <h3>Graphic Designer</h3>
+  <p>Bring your ideas to life with visually stunning designs tailored to your brand and vision.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('graphic-designer')">More</button>
+    <button class="btn1 btn-info" onclick="sendWhatsApp(this)">Get Designs</button>
+  </div>
+</div>
+
+<!-- HR Consultant -->
+<div class="service-card1">
+  <p>
+    <img class="consult" src="https://cdn-icons-png.flaticon.com/128/9119/9119160.png" alt="HR Consultant" />
+  </p>
+  <h3>HR Consultant</h3>
+  <p>I bridge Employers with Employees. I help you find the right talent for your company.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('recruiter')">View More</button>
+    <button class="btn1 btn-warning" onclick="sendWhatsApp(this)">Careers</button>
+  </div>
+</div>
+
+<!-- Curriculum Designer -->
+<div class="service-card1">
+  <p>
+    <img class="CD" src="https://cdn-icons-png.flaticon.com/128/11687/11687130.png" alt="CD Icon">
+  </p>
+  <h3>Curriculum Designer</h3>
+  <p>Boost your online presence with strategic social media management tailored to your goals.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('social-media')">View More</button>
+    <button class="btn1 btn-success1" onclick="sendWhatsApp(this)">Consult</button>
+  </div>
+</div>
+
+<!-- Photographer -->
+<div class="service-card1">
+  <p>📷</p>
+  <h3>Photographer</h3>
+  <p>Capture breathtaking moments with our professional photography services for any occasion.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('photographer')">View More</button>
+    <button class="btn1 btn-danger" onclick="sendWhatsApp(this)">Book Now</button>
+  </div>
+</div>
+
+    </section>
+
+    <section class="outer-card">
+      <h1>Our Upcoming Services</h1>
+      <div class="container2">
+        <div class="card2" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="badge">Coming Soon</div>
+              <i class="fas fa-heart"></i>
+              <h2>Blind Date</h2>
+              <p>A thrilling matchmaking service that sets you up on exciting blind dates with like-minded individuals.</p>
+            </div>
+            <div class="card-back">
+              <img src="https://thf.bing.com/th/id/OIP.G6GQ8vIOZy6LWOUibOgOUAHaE8?w=276&h=184&c=7&r=0&o=7&cb=thfc1&pid=1.7&rm=3" alt="Blind Date">
+            </div>
+          </div>
+        </div>
+
+        <div class="card2" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="badge">Coming Soon</div>
+              <i class="fas fa-chart-line"></i>
+              <h2>Lynate Trading AI</h2>
+              <p>Smart AI-powered trading for Forex, Stocks, and Crypto markets, leveraging advanced algorithms.</p>
+            </div>
+            <div class="card-back">
+              <img src="https://thf.bing.com/th/id/OIP.ysK99rq5pLiHT3h99zy2GwHaD3?w=320&h=180&c=7&r=0&o=7&cb=thfc1&pid=1.7&rm=3" alt="Trading AI">
+            </div>
+          </div>
+        </div>
+
+        <div class="card2" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="badge">Coming Soon</div>
+              <i class="fas fa-plane"></i>
+              <h2>Family Tours</h2>
+              <p>Exclusive travel packages designed to give families unforgettable memories at top destinations.</p>
+            </div>
+            <div class="card-back">
+              <img src="https://synques-cdn.s3.ap-south-1.amazonaws.com/rambleonindia.in/images/family-tour.jpg" alt="Family Tours">
+            </div>
+          </div>
+        </div>
+
+        <div class="card2" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="badge">Coming Soon</div>
+              <i class="fas fa-user-shield"></i>
+              <h2>Cybersecurity & Ethical Hacking</h2>
+              <p>Comprehensive cybersecurity and ethical hacking course designed to teach advanced security skills.</p>
+            </div>
+            <div class="card-back">
+              <img src="https://www.cisometric.com/storage/106/01JRVGXYQ2N7KRMFW98BP9F2R9.png" alt="Cybersecurity">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <a href="#" class="footer-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MpkKsl6VsBxkZpUvFzMJfunsxLjk0Quurw&s" alt="Baluku Josephats">
+          <span>Baluku<span>Josephats</span></span>
+        </a>
+        <p>Building the future with innovative technology solutions that empower businesses and individuals to achieve more.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+       <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+        <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="attribution.html">Attributions</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Most-Liked</h3>
+        <ul>
+          <li><a href="#">Software Development</a></li>
+          <li><a href="#">Web Designing</a></li>
+          <li><a href="#">Virtual Companion</a></li>
+          <li><a href="#">Tutoring</a></li>
+          <li><a href="#">Match Making</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Get In Touch</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Masaka-UG</p>
+        <p><i class="fas fa-envelope"></i> wecare@baluku.me</p>
+        <p><i class="fas fa-phone-alt"></i> +256 7503 66195</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 - 17:00</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>COPYRIGHT &copy;  BALUKU JOSEPHATS</p>
+    </div>
+  </footer>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">&times;</button>
+      <h2 id="popup-title">Service Details</h2>
+      <p id="popup-description"></p>
+    </div>
+  </div>
+  
+  <script src="functions/services.js"></script>
+</body>
+</html>
