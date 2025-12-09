@@ -1,0 +1,131 @@
+/* Add these animations to your existing love.css file */
+
+/* Loading animations */
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Selection animations */
+@keyframes selectPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(233, 30, 99, 0); }
+}
+
+/* Success animation */
+@keyframes successCheck {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Error animation */
+@keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Progress animation */
+@keyframes progressStripes {
+    0% { background-position: 40px 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Add these utility classes */
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+.success-check {
+    animation: successCheck 0.5s ease;
+}
+
+.error-shake {
+    animation: errorShake 0.5s ease;
+}
+
+/* Print styles */
+@media print {
+    .back-btn,
+    .progress-tracker,
+    .mobile-nav,
+    .section-navigation,
+    .submit-btn {
+        display: none !important;
+    }
+    
+    .form-section {
+        display: block !important;
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .main-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary: #000000;
+        --secondary: #0000ff;
+        --border: #000000;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        border-width: 2px;
+    }
+    
+    .checkbox-card input:checked + .checkbox-content,
+    .value-card.selected,
+    .emotion-card.selected,
+    .phobia-card.selected,
+    .aura-card.selected {
+        outline: 3px solid var(--primary);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

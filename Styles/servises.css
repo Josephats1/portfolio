@@ -223,7 +223,7 @@ h4 {
                 rgba(223, 26, 26, 0.2), 
                 rgba(27, 3, 3, 0.1)
               ),
-              url('https://images.stockcake.com/public/3/c/3/3c3f3379-0391-4e8e-a8b5-6769638f5e1a_large/modern-office-setup-stockcake.jpg');
+              url('../Images/lst.png');
   background-size: cover;
   background-position: center;
   padding: 9rem 2rem 6rem;
@@ -403,6 +403,7 @@ h4 {
 }
 
 #popup-title{
+  font-size: 1.2rem;
     color: deeppink;
 }
     .service-card1 {
@@ -996,12 +997,10 @@ border-radius: 16px;
       opacity: 1;
       visibility: visible;
     }
-    .popup h1{
-        color: deeppink;
-    }
     .popup-content {
       background: var(--light-bg);
       padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       border-radius: 15px;
       max-width: 600px;
       width: 90%;

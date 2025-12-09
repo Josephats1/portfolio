@@ -28,7 +28,10 @@
       background-color: var(--dark-bg);
       line-height: 1.6;
     }
-    
+    p span.highlight{
+      text-decoration: none !important;
+      color: #bac749;
+    }
     /* Navigation */
     nav {
       position: fixed;
@@ -352,15 +355,12 @@ p a {
   padding: 2px 4px;
  font-size: small;
   text-decoration: none;
-  border-bottom: 2px solid #e9e5f0; /* Minimal underline effect */
+  border-bottom: 2px solid #3e079c; /* Minimal underline effect */
   transition: all 0.3s ease;
 }
 
-p a:hover {
-  color: #40aadb;                  /* Darker text on hover */
-  border-bottom-color: #d4d63d;    /* Underline darkens */
-  transform: translateY(-1px);  /* Subtle lift effect */
-}
+
+
 
 
     .card-1 {
@@ -750,6 +750,8 @@ p a:hover {
       .left-text, .right-text {
         order: 0;
         flex: 1;
+        font-family: Brush Script MT;
+    
       }
       
       .card-2 {
@@ -918,7 +920,7 @@ p a:hover {
       }
       
       .left-text, .right-text {
-        font-size: 1.1rem;
+       display: none ;
       }
         .about-section p{
         width: 100%;

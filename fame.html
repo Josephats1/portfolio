@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Baluku | Wall of Fame</title>
+  <meta name="description" content="Client success stories and testimonials - See how Baluku Josephat has helped clients achieve their goals across various services.">
+  <meta name="author" content="Baluku Josephat">
+  <meta name="keywords" content="Baluku Josephat, client success, testimonials, happy clients, matchmaking success, web development projects">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Baluku | Wall of Fame - Client Success Stories">
+  <meta property="og:description" content="Discover the success stories of clients who have used Baluku Josephat's services including matchmaking, web development, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.baluku.me/wall-of-fame">
+  <meta property="og:image" content="https://www.yourwebsite.com/images/og-wall-of-fame.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Reuse existing CSS variables and base styles */
+    :root {
+      --primary: #6c5ce7;
+      --primary-dark: #5649c7;
+      --secondary: #a29bfe;
+      --accent: #00cec9;
+      --dark: #2d3436;
+      --light: #f5f6fa;
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      --light-bg: rgba(30, 30, 30, 0.8);
+      --primary-color: #6c5ce7;
+      --secondary-color: #a29bfe;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      color: #fff;
+      overflow-x: hidden;
+      background-color: hsl(0, 12%, 66%);
+      background-image: 
+        radial-gradient(circle at 15% 50%, rgba(239, 238, 247, 0.1) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(0, 206, 201, 0.1) 0%, transparent 25%),
+        radial-gradient(circle at 50% 80%, rgba(162, 155, 254, 0.1) 0%, transparent 25%);
+    }
+    
+    /* Navigation - Same as services page */
+    nav {
+      position: fixed;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      z-index: 1000;
+      width: auto;
+      transition: all 0.4s ease;
+    }
+    
+    nav.scrolled {
+      top: 0.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-container {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border-radius: 50px;
+      padding: 0.8rem 2rem;
+      border: none;
+      transition: all 0.4s ease;
+      position: relative;
+      box-shadow: none;
+    }
+    
+    /* Neon border implementation */
+    .nav-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50px;
+      padding: 2px;
+      background: linear-gradient(
+        45deg,
+        #ff00cc,
+        #6c5ce7,
+        #00cec9,
+        #6c5ce7,
+        #ff00cc
+      );
+      background-size: 400%;
+      z-index: -1;
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.8;
+      animation: neon-border 8s linear infinite;
+    }
+    
+    @keyframes neon-border {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .nav-container:hover::before {
+      opacity: 1;
+      box-shadow: 
+        0 0 10px rgba(108, 92, 231, 0.8),
+        0 0 20px rgba(0, 206, 201, 0.6);
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-right: 2rem;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .logo img {
+      width: 36px;
+      height: 36px;
+      margin-right: 0.8rem;
+      border-radius: 50%;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: var(--gradient);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+    }
+    
+    /* Mobile menu icons */
+    .nav-links .mobile-icon {
+      display: none;
+      font-size: 1.2rem;
+    }
+    
+    /* MAIN */
+    main {
+      margin: 6rem 2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(
+        135deg, 
+        rgba(108, 92, 231, 0.2), 
+        rgba(0, 206, 201, 0.1)
+      ),
+      url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 9rem 2rem 6rem;
+      text-align: center;
+      color: white;
+     
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .hero p {
+      color: var(--accent);
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    
+    /* Stats Section - Glassy and Reduced Height */
+    .stats-section {
+      background: rgba(253, 249, 249, 0.4);
+     
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 2rem 2rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: deeppink;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      color: yellow;
+      font-size: 1rem;
+    }
+    
+    /* Client Success Section */
+    .client-success-section {
+      margin-bottom: 4rem;
+    }
+    .section-title{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    /* Client Cards Grid - Neomorphic Design */
+    .client-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .client-card {
+      background: lightsalmon;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+      border: none;
+      box-shadow: 
+        8px 8px 16px rgba(0, 0, 0, 0.3),
+        -8px -8px 16px rgba(255, 255, 255, 0.05);
+      padding: 0;
+    }
+    
+    .client-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 
+        12px 12px 24px rgba(0, 0, 0, 0.4),
+        -12px -12px 24px rgba(255, 255, 255, 0.08);
+    }
+    
+    .client-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .client-content {
+      padding: 1.5rem;
+    }
+    
+    .client-name {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+    
+    .client-country {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: deeppink;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    .client-service {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .client-story {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .client-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .client-date {
+      color: rgb(255, 0, 64);
+      font-size: 0.8rem;
+    }
+    
+    .client-rating {
+      color: gold;
+      font-size: 0.9rem;
+    }
+    
+    /* Load More Button */
+    .load-more-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .load-more-btn {
+      padding: 0.8rem 2rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      box-shadow: 
+        4px 4px 8px rgba(0, 0, 0, 0.2),
+        -4px -4px 8px rgba(255, 255, 255, 0.05);
+    }
+    
+    .load-more-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 
+        6px 6px 12px rgba(0, 0, 0, 0.3),
+        -6px -6px 12px rgba(255, 255, 255, 0.08);
+    }
+    
+    .load-more-btn:active {
+      transform: translateY(1px);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 5rem 0 2rem;
+      margin-top: 4rem;
+    }
+    
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .footer-logo {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .footer-logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.8rem;
+    }
+    
+    .footer-about p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-social a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .footer-links h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .footer-links h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 3px;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      padding-left: 5px;
+    }
+    
+    .footer-contact h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .footer-contact h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 3px;
+    }
+    
+    .footer-contact p {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    
+    .footer-contact i {
+      color: var(--secondary);
+      margin-top: 0.2rem;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+    
+    .client-card {
+      animation: fadeIn 1.2s ease-in-out forwards;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .client-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.95);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.4s ease;
+        z-index: 999;
+        gap: 1.5rem;
+        backdrop-filter: blur(10px);
+      }
+      
+      .nav-links.active {
+        transform: translateY(0);
+      }
+      
+      .nav-links a {
+        padding: 0.8rem 1rem;
+        font-size: 1.1rem;
+        width: 100%;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      
+      .nav-links a:hover {
+        background: rgba(108, 92, 231, 0.1);
+      }
+      
+      .nav-links .mobile-icon {
+        display: inline-block;
+        width: 24px;
+        text-align: center;
+      }
+      
+      .client-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 576px) {
+      main {
+        margin: 6rem 1rem;
+      }
+      
+      .hero {
+        padding: 7rem 1rem 3rem;
+      }
+      
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+      
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .client-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MpkKsl6VsBxkZpUvFzMJfunsxLjk0Quurw&s" alt="Baluku Josephats">
+      </a>
+      <button class="mobile-menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home mobile-icon"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="service.html">
+            <i class="fas fa-cogs mobile-icon"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="Projects.html">
+            <i class="fas fa-briefcase mobile-icon"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="fas fa-lightbulb mobile-icon"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Wall of Fame - Clients Witnessing Greatness</h2>
+      <p>Discover the inspiring journeys of clients from around the world who achieved their goals through our services</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Stats Section - Glassy and Reduced Height -->
+    <section class="stats-section">
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">5913+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">397</div>
+          <div class="stat-label">Successful Matches</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">70+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Success Section -->
+    <section class="client-success-section">
+      <h2 class="section-title">Success  Dashboard</h2>
+      <div class="client-cards-grid" id="clientCardsGrid">
+        <!-- Client cards will be loaded here by JavaScript -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="load-more-btn" id="loadMoreBtn">Accrete</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <a href="#" class="footer-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MpkKsl6VsBxkZpUvFzMJfunsxLjk0Quurw&s" alt="Baluku Josephats">
+          <span>Baluku<span>Josephats</span></span>
+        </a>
+        <p>Building the future with innovative technology solutions that empower businesses and individuals to achieve more.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Most-Liked</h3>
+        <ul>
+          <li><a href="#">Software Development</a></li>
+          <li><a href="#">Web Designing</a></li>
+          <li><a href="#">Virtual Companion</a></li>
+          <li><a href="#">Tutoring</a></li>
+          <li><a href="#">Match Making</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Get In Touch</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Masaka-UG</p>
+        <p><i class="fas fa-envelope"></i> wecare@baluku.me</p>
+        <p><i class="fas fa-phone-alt"></i> +256 7503 66195</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 - 17:00</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>COPYRIGHT &copy; BALUKU JOSEPHATS</p>
+    </div>
+  </footer>
+
+  <script>
+    // Client data - in a real application, this would come from a database
+    const clientData = [
+      {
+        id: 1,
+        name: "Sarah & Michael",
+        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "United States",
+        service: "Got a Match",
+        story: "After using the matchmaking service, we found our perfect partners and have been happily together for over a year now!",
+        date: "March 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 2,
+        name: "David Chen",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Canada",
+        service: "Web Development",
+        story: "My business website was transformed with a modern design that increased conversions by 40%.",
+        date: "January 2024",
+        rating: "★★★★★"
+      },
+      {
+        id: 3,
+        name: "Emma Wilson",
+        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "United Kingdom",
+        service: "Virtual Companion",
+        story: "The virtual companion sessions helped me through a difficult time. The conversations were meaningful and uplifting.",
+        date: "November 2023",
+        rating: "★★★★☆"
+      },
+      {
+        id: 4,
+        name: "James & Lisa",
+        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Australia",
+        service: "Got a Match",
+        story: "We never thought we'd find love online, but the matchmaking service connected us perfectly.",
+        date: "February 2024",
+        rating: "★★★★★"
+      },
+      {
+        id: 5,
+        name: "Robert Johnson",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Germany",
+        service: "Mobile App Development",
+        story: "The custom mobile app developed for my business has revolutionized how we serve our customers. Excellent work!",
+        date: "December 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 6,
+        name: "Maria Garcia",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Spain",
+        service: "Virtual Companion",
+        story: "The virtual companion service made me feel connected and supported. Wonderful experience!",
+        date: "October 2023",
+        rating: "★★★★☆"
+      },
+      {
+        id: 7,
+        name: "Alex & Taylor",
+        image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "South Africa",
+        service: "Got a Match",
+        story: "We were matched based on our shared values and interests. It's been an amazing journey together since!",
+        date: "September 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 8,
+        name: "Jennifer Lee",
+        image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "South Korea",
+        service: "Web Design Course",
+        story: "The web design course was comprehensive and practical. I landed a job as a junior developer within 3 months!",
+        date: "August 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 9,
+        name: "Thomas Brown",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "France",
+        service: "Business Consultation",
+        story: "The strategic advice helped me pivot my business model, resulting in a 60% increase in revenue.",
+        date: "July 2023",
+        rating: "★★★★☆"
+      },
+      {
+        id: 10,
+        name: "Olivia & Noah",
+        image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Netherlands",
+        service: "Got a Match",
+        story: "We were both hesitant on finding love, but the personalized approach made all the difference.",
+        date: "June 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 11,
+        name: "Daniel Kim",
+        image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Japan",
+        service: "E-commerce Development",
+        story: "The e-commerce platform developed for my store has doubled our online sales in just 4 months.",
+        date: "May 2023",
+        rating: "★★★★★"
+      },
+      {
+        id: 12,
+        name: "Sophia Martinez",
+        image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        country: "Brazil",
+        service: "Life Coaching",
+        story: "The life coaching sessions provided clarity and direction during a career transition.",
+        date: "April 2023",
+        rating: "★★★★☆"
+      }
+    ];
+
+    // DOM elements
+    const clientCardsGrid = document.getElementById('clientCardsGrid');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
+    // Initial number of cards to display
+    let cardsToShow = 4;
+    
+    // Function to create client card HTML
+    function createClientCard(client) {
+      return `
+        <div class="client-card">
+          <img src="${client.image}" alt="${client.name}" class="client-image">
+          <div class="client-content">
+            <h3 class="client-name">${client.name}</h3>
+            <div class="client-country">
+              <i class="fas fa-globe"></i>
+              <span>${client.country}</span>
+            </div>
+            <span class="client-service">${client.service}</span>
+            <p class="client-story">${client.story}</p>
+            <div class="client-details">
+              <span class="client-date">${client.date}</span>
+              <span class="client-rating">${client.rating}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    
+    // Function to display client cards
+    function displayClientCards(startIndex, endIndex) {
+      const fragment = document.createDocumentFragment();
+      
+      for (let i = startIndex; i < endIndex && i < clientData.length; i++) {
+        const cardElement = document.createElement('div');
+        cardElement.innerHTML = createClientCard(clientData[i]);
+        fragment.appendChild(cardElement.firstElementChild);
+      }
+      
+      clientCardsGrid.appendChild(fragment);
+    }
+    
+    // Initial display of client cards
+    displayClientCards(0, cardsToShow);
+    
+    // Load more functionality
+    loadMoreBtn.addEventListener('click', function() {
+      const currentCount = clientCardsGrid.children.length;
+      const nextCount = currentCount + 4;
+      
+      displayClientCards(currentCount, nextCount);
+      
+      // Hide button if all cards are displayed
+      if (clientCardsGrid.children.length >= clientData.length) {
+        loadMoreBtn.style.display = 'none';
+      }
+    });
+    
+    // Mobile menu functionality
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

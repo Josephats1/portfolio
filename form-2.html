@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Love Match Questionnaire | Find Your Soulmate</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Complete our comprehensive Love Match Questionnaire to discover compatibility and find your perfect soulmate match.">
+    <meta name="keywords" content="love match, soulmate finder, relationship compatibility, dating questionnaire, matchmaking">
+    <meta name="author" content="Baluku Josephats">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Complete Love Match Questionnaire">
+    <meta property="og:description" content="Discover your compatibility with our comprehensive relationship questionnaire.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://baluku.me/love-questionnaire">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Love Match Questionnaire">
+    <meta name="twitter:description" content="Find your perfect match with our comprehensive compatibility test.">
+    <meta name="twitter:image" content="images/preview.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="Styles/test.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Mobile optimizations -->
+    <meta name="theme-color" content="#e91e63">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <style>
+        /* Quick loading styles */
+        body {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back Button -->
+    <a href="service.html" class="back-btn floating-btn" aria-label="Go back to services">
+        <i class="fas fa-arrow-left"></i>
+        <span class="btn-text">Back</span>
+    </a>
+
+    <!-- Progress Tracker -->
+    <div class="progress-tracker">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-dots">
+            <div class="progress-dot active" data-step="1"><i class="fas fa-user"></i></div>
+            <div class="progress-dot" data-step="2"><i class="fas fa-phone"></i></div>
+            <div class="progress-dot" data-step="3"><i class="fas fa-heart"></i></div>
+            <div class="progress-dot" data-step="4"><i class="fas fa-star"></i></div>
+            <div class="progress-dot" data-step="5"><i class="fas fa-brain"></i></div>
+            <div class="progress-dot" data-step="6"><i class="fas fa-home"></i></div>
+            <div class="progress-dot" data-step="7"><i class="fas fa-smile"></i></div>
+            <div class="progress-dot" data-step="8"><i class="fas fa-spider"></i></div>
+            <div class="progress-dot" data-step="9"><i class="fas fa-star-and-crescent"></i></div>
+            <div class="progress-dot" data-step="10"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Form Header -->
+        <header class="form-header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <i class="fas fa-heart-pulse"></i>
+                    <span class="title-text">Love Match Questionnaire</span>
+                </h1>
+                <p class="subtitle">Find your perfect compatibility match through our comprehensive analysis</p>
+                <div class="completion-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Secure & Confidential</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Form -->
+        <form id="love-questionnaire-form" class="questionnaire-form" action="" method="POST">
+            <!-- Hidden Fields -->
+            <input type="hidden" name="to" value="bjerrykibs@gmail.com">
+            <input type="hidden" name="subject" value="New Love Match Questionnaire Submission">
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <!-- ===== SECTION 1: PERSONAL INFORMATION ===== -->
+            <section id="personal-info-section" class="form-section active">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Personal Information</h2>
+                        <p class="section-subtitle">Tell us about yourself</p>
+                    </div>
+                </div>
+
+                <div class="grid-container responsive-grid">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">
+                            <i class="fas fa-signature"></i>
+                            <span class="label-text">Full Name *</span>
+                        </label>
+                        <input type="text" id="fullname" name="fullname" 
+                               placeholder="Baluku Josephats" required
+                               class="form-input">
+                        <div class="input-hint">Your name as you'd like to be addressed</div>
+                    </div>
+
+                    <!-- Country -->
+                    <div class="form-group">
+                        <label for="country" class="form-label">
+                            <i class="fas fa-globe-americas"></i>
+                            <span class="label-text">Country *</span>
+                        </label>
+                        <input type="text" id="country" name="country" 
+                               placeholder="United States" required
+                               class="form-input">
+                    </div>
+
+                    <!-- Age -->
+                    <div class="form-group">
+                        <label for="age" class="form-label">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span class="label-text">Age *</span>
+                        </label>
+                        <input type="number" id="age" name="age" 
+                               placeholder="22" min="18" max="120" required
+                               class="form-input">
+                        <div class="input-hint">Must be 18+ years</div>
+                    </div>
+
+                    <!-- Height -->
+                    <div class="form-group">
+                        <label for="height" class="form-label">
+                            <i class="fas fa-ruler-vertical"></i>
+                            <span class="label-text">Height</span>
+                        </label>
+                        <input type="text" id="height" name="height" 
+                               placeholder="5.9 ft or 175 cm"
+                               class="form-input">
+                    </div>
+
+                    <!-- Skin Tone -->
+                    <div class="form-group">
+                        <label for="skin-tone" class="form-label">
+                            <i class="fas fa-palette"></i>
+                            <span class="label-text">Skin Tone</span>
+                        </label>
+                        <input type="text" id="skin-tone" name="skin_tone" 
+                               placeholder="Medium Brown"
+                               class="form-input">
+                    </div>
+
+                    <!-- Marital Status -->
+                    <div class="form-group">
+                        <label for="marital-status" class="form-label">
+                            <i class="fas fa-ring"></i>
+                            <span class="label-text">Marital Status</span>
+                        </label>
+                        <select id="marital-status" name="marital_status" class="form-select">
+                            <option value="">Select Status</option>
+                            <option value="single">Single</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
+                            <option value="separated">Separated</option>
+                        </select>
+                    </div>
+
+                    <!-- Number of Children -->
+                    <div class="form-group">
+                        <label for="children" class="form-label">
+                            <i class="fas fa-child"></i>
+                            <span class="label-text">Number of Children</span>
+                        </label>
+                        <input type="number" id="children" name="children" 
+                               placeholder="0" min="0" max="20"
+                               class="form-input">
+                    </div>
+
+                    <!-- Profession -->
+                    <div class="form-group">
+                        <label for="occupation" class="form-label">
+                            <i class="fas fa-briefcase"></i>
+                            <span class="label-text">Profession *</span>
+                        </label>
+                        <input type="text" id="occupation" name="occupation" 
+                               placeholder="Software Engineer" required
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn next-btn" data-next="contact-info-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 2: CONTACT INFORMATION ===== -->
+            <section id="contact-info-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Contact Information</h2>
+                        <p class="section-subtitle">How can we reach you?</p>
+                    </div>
+                </div>
+
+                <div class="grid-container responsive-grid">
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            <i class="fas fa-envelope"></i>
+                            <span class="label-text">Email Address *</span>
+                        </label>
+                        <input type="email" id="email" name="email" 
+                               placeholder="welove@baluku.me" required
+                               class="form-input">
+                        <div class="input-hint">We'll send match results here</div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone" class="form-label">
+                            <i class="fas fa-phone"></i>
+                            <span class="label-text">Phone Number</span>
+                        </label>
+                        <input type="tel" id="phone" name="phone" 
+                               placeholder="+256750366195"
+                               class="form-input">
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="form-group">
+                        <label for="whatsapp" class="form-label">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="label-text">WhatsApp</span>
+                        </label>
+                        <input type="tel" id="whatsapp" name="whatsapp" 
+                               placeholder="+256750366195"
+                               class="form-input">
+                    </div>
+
+                    <!-- TikTok -->
+                    <div class="form-group">
+                        <label for="tiktok" class="form-label">
+                            <i class="fab fa-tiktok"></i>
+                            <span class="label-text">TikTok</span>
+                        </label>
+                        <input type="text" id="tiktok" name="social_media" 
+                               placeholder="@welove"
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Contact Preferences -->
+                <div class="preference-group">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-comment-dots"></i>
+                        Preferred Contact Method
+                    </h3>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="contact_preference[]" value="Email">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <span>Email</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="contact_preference[]" value="WhatsApp">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <span>WhatsApp</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="contact_preference[]" value="Phone">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <span>Phone Call</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="contact_preference[]" value="SMS">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-sms"></i>
+                                </div>
+                                <span>SMS</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="personal-info-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="relationship-prefs-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 3: RELATIONSHIP PREFERENCES ===== -->
+            <section id="relationship-prefs-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Relationship Preferences</h2>
+                        <p class="section-subtitle">What are you looking for in a relationship?</p>
+                    </div>
+                </div>
+
+                <!-- Deal Breakers -->
+                <div class="form-group">
+                    <label for="deal-breakers" class="form-label">
+                        <i class="fas fa-ban"></i>
+                        <span class="label-text">What are your deal breakers? *</span>
+                    </label>
+                    <textarea id="deal-breakers" name="deal_breakers" 
+                              placeholder="e.g., Dishonesty, Lack of ambition, Poor communication, Smoking, etc."
+                              required class="form-textarea"></textarea>
+                    <div class="input-hint">Things you absolutely cannot tolerate in a relationship</div>
+                </div>
+
+                <!-- Love Languages -->
+                <div class="preference-group">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-language"></i>
+                        Love Languages
+                    </h3>
+                    <p class="subsection-description">Select your primary love languages (choose up to 3)</p>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="love_languages[]" value="Physical Touch">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <span>Physical Touch</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="love_languages[]" value="Words of Affirmation">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-comment-medical"></i>
+                                </div>
+                                <span>Words of Affirmation</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="love_languages[]" value="Acts of Service">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <span>Acts of Service</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="love_languages[]" value="Quality Time">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <span>Quality Time</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="love_languages[]" value="Gifts">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Gifts</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Marriage Type Preference -->
+                <div class="form-group">
+                    <label for="marriage-preference" class="form-label">
+                        <i class="fas fa-church"></i>
+                        <span class="label-text">Preferred Marriage Type</span>
+                    </label>
+                    <select id="marriage-preference" name="marriage_preference" class="form-select">
+                        <option value="">Select preference</option>
+                        <option value="monogamy">Monogamy (One partner)</option>
+                        <option value="polygamy">Polygamy (Multiple partners)</option>
+                        <option value="open-marriage">Open Marriage</option>
+                        <option value="companionate-marriage">Companionate Marriage</option>
+                        <option value="traditional">Traditional Marriage</option>
+                    </select>
+                </div>
+
+                <!-- Communication Style -->
+                <div class="preference-group">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-comments"></i>
+                        Communication Style
+                    </h3>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="communication_style[]" value="Cooperative">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <span>Cooperative</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="communication_style[]" value="Imperative">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <span>Imperative</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="communication_style[]" value="Directive">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-directions"></i>
+                                </div>
+                                <span>Directive</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="communication_style[]" value="Supportive">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-hands"></i>
+                                </div>
+                                <span>Supportive</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Relationship Perspective -->
+                <div class="form-group">
+                    <label for="relationship-perspective" class="form-label">
+                        <i class="fas fa-eye"></i>
+                        <span class="label-text">Relationship Perspective</span>
+                    </label>
+                    <select id="relationship-perspective" name="relationship_perspective" class="form-select">
+                        <option value="">Select perspective</option>
+                        <option value="feminism">Feminism</option>
+                        <option value="queer">Queer</option>
+                        <option value="masculinity">Masculinity</option>
+                        <option value="egalitarian">Egalitarian</option>
+                        <option value="traditional">Traditional</option>
+                        <option value="modern">Modern</option>
+                    </select>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="contact-info-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="values-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 4: CORE VALUES ===== -->
+            <section id="values-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Essential Standards</h2>
+                        <p class="section-subtitle">Select up to 2 top categories of your fundamental tenets</p>
+                    </div>
+                </div>
+
+                <div class="card-container values-grid">
+                    <!-- Core Values Card -->
+                    <div class="value-card" data-value="Core Values">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <h3 class="card-title">Core Values</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-check-circle"></i> Honesty & Integrity</li>
+                            <li><i class="fas fa-check-circle"></i> Respect & Dignity</li>
+                            <li><i class="fas fa-check-circle"></i> Fairness & Justice</li>
+                            <li><i class="fas fa-check-circle"></i> Compassion & Empathy</li>
+                            <li><i class="fas fa-check-circle"></i> Responsibility</li>
+                        </ul>
+                        <div class="card-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            Fundamental Principles
+                        </div>
+                        <input type="checkbox" name="core_values[]" value="Core Values" class="card-checkbox">
+                    </div>
+
+                    <!-- Social Values Card -->
+                    <div class="value-card" data-value="Social Values">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="card-title">Social Values</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-check-circle"></i> Love & Connection</li>
+                            <li><i class="fas fa-check-circle"></i> Family & Friendship</li>
+                            <li><i class="fas fa-check-circle"></i> Community</li>
+                            <li><i class="fas fa-check-circle"></i> Inclusion & Diversity</li>
+                            <li><i class="fas fa-check-circle"></i> Social Responsibility</li>
+                        </ul>
+                        <div class="card-badge">
+                            <i class="fas fa-heart"></i>
+                            Relationship Focused
+                        </div>
+                        <input type="checkbox" name="core_values[]" value="Social Values" class="card-checkbox">
+                    </div>
+
+                    <!-- Personal Values Card -->
+                    <div class="value-card" data-value="Personal Values">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3 class="card-title">Personal Values</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-check-circle"></i> Health & Wellness</li>
+                            <li><i class="fas fa-check-circle"></i> Growth & Learning</li>
+                            <li><i class="fas fa-check-circle"></i> Creativity & Innovation</li>
+                            <li><i class="fas fa-check-circle"></i> Purpose & Meaning</li>
+                            <li><i class="fas fa-check-circle"></i> Independence</li>
+                        </ul>
+                        <div class="card-badge">
+                            <i class="fas fa-rocket"></i>
+                            Self-Development
+                        </div>
+                        <input type="checkbox" name="core_values[]" value="Personal Values" class="card-checkbox">
+                    </div>
+
+                    <!-- Moral Values Card -->
+                    <div class="value-card" data-value="Moral Values">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="card-title">Moral Values</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-check-circle"></i> Integrity & Ethics</li>
+                            <li><i class="fas fa-check-circle"></i> Gratitude & Appreciation</li>
+                            <li><i class="fas fa-check-circle"></i> Forgiveness & Mercy</li>
+                            <li><i class="fas fa-check-circle"></i> Humanity & Kindness</li>
+                            <li><i class="fas fa-check-circle"></i> Perseverance & Resilience</li>
+                        </ul>
+                        <div class="card-badge">
+                            <i class="fas fa-scale-balanced"></i>
+                            Ethical Compass
+                        </div>
+                        <input type="checkbox" name="core_values[]" value="Moral Values" class="card-checkbox">
+                    </div>
+                </div>
+
+                <div class="selection-counter">
+                    <i class="fas fa-tasks"></i>
+                    <span>Selected: <strong id="values-count">0</strong>/2</span>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="relationship-prefs-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="personality-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 5: PERSONALITY ===== -->
+            <section id="personality-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Personality & Beliefs</h2>
+                        <p class="section-subtitle">Understanding your unique personality traits</p>
+                    </div>
+                </div>
+
+                <div class="grid-container responsive-grid">
+                    <!-- Religion -->
+                    <div class="form-group">
+                        <label for="religion" class="form-label">
+                            <i class="fas fa-pray"></i>
+                            <span class="label-text">What is your religion?</span>
+                        </label>
+                        <input type="text" id="religion" name="religion" 
+                               placeholder="e.g., Christian, Muslim, LDS, etc."
+                               class="form-input">
+                    </div>
+
+                    <!-- Spiritual Practice -->
+                    <div class="form-group">
+                        <label for="spiritual-practice" class="form-label">
+                            <i class="fas fa-spa"></i>
+                            <span class="label-text">Spiritual Practices</span>
+                        </label>
+                        <input type="text" id="spiritual-practice" name="spiritual_practice" 
+                               placeholder="e.g., Meditation, Prayer, Yoga, etc."
+                               class="form-input">
+                    </div>
+
+                    <!-- Myers-Briggs Type -->
+                    <div class="form-group">
+                        <label for="personality-type" class="form-label">
+                            <i class="fas fa-user-tie"></i>
+                            <span class="label-text">Myers-Briggs Personality Type</span>
+                        </label>
+                        <input type="text" id="personality-type" name="personality_type" 
+                               placeholder="e.g., ISTJ, ENFP, etc."
+                               class="form-input">
+                    </div>
+
+                    <!-- Social Archetype -->
+                    <div class="form-group">
+                        <label for="social-archetype" class="form-label">
+                            <i class="fas fa-crown"></i>
+                            <span class="label-text">Social Hierarchy / Archetype</span>
+                        </label>
+                        <input type="text" id="social-archetype" name="social_archetype" 
+                               placeholder="e.g., Alpha, Sigma, Delta, Omega, etc."
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Jungian Types -->
+                <div class="preference-group">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-psychic"></i>
+                        Jungian Personality Types
+                    </h3>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="jungian_types[]" value="Sanguine">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-laugh"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <strong>Sanguine</strong>
+                                    <small>Optimistic & Social</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="jungian_types[]" value="Choleric">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <strong>Choleric</strong>
+                                    <small>Ambitious & Leader</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="jungian_types[]" value="Melancholic">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <strong>Melancholic</strong>
+                                    <small>Analytical & Quiet</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="jungian_types[]" value="Phlegmatic">
+                            <div class="checkbox-content">
+                                <div class="checkbox-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <strong>Phlegmatic</strong>
+                                    <small>Relaxed & Peaceful</small>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Cognitive Dissonance -->
+                <div class="form-group">
+                    <label for="cognitive-dissonance" class="form-label">
+                        <i class="fas fa-head-side-virus"></i>
+                        <span class="label-text">How does cognitive dissonance affect you?</span>
+                    </label>
+                    <textarea id="cognitive-dissonance" name="cognitive_dissonance" 
+                              placeholder="e.g., Rationalization, Attitude change, Behavioral modification, Avoidance, etc."
+                              class="form-textarea"></textarea>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="values-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="family-prefs-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 6: FAMILY PREFERENCES ===== -->
+            <section id="family-prefs-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Family Preferences</h2>
+                        <p class="section-subtitle">Your vision for family life</p>
+                    </div>
+                </div>
+
+                <!-- Love for Children Rating -->
+                <div class="rating-group">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-child"></i>
+                        Rate Your Love for Children
+                    </h3>
+                    <div class="rating-container">
+                        <div class="rating-option">
+                            <input type="radio" id="rating10" name="love_for_children" value="10">
+                            <label for="rating10" class="rating-label" style="background-color: #ff0000;">
+                                <span>10%</span>
+                                <small>Not for me</small>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating20" name="love_for_children" value="20">
+                            <label for="rating20" class="rating-label" style="background-color: #ff3300;">
+                                <span>20%</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating30" name="love_for_children" value="30">
+                            <label for="rating30" class="rating-label" style="background-color: #ff6600;">
+                                <span>30%</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating50" name="love_for_children" value="50">
+                            <label for="rating50" class="rating-label" style="background-color: #ffcc00;">
+                                <span>50%</span>
+                                <small>Neutral</small>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating60" name="love_for_children" value="60">
+                            <label for="rating60" class="rating-label" style="background-color: #66cc00;">
+                                <span>60%</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating70" name="love_for_children" value="70">
+                            <label for="rating70" class="rating-label" style="background-color: #66cc66;">
+                                <span>70%</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating80" name="love_for_children" value="80">
+                            <label for="rating80" class="rating-label" style="background-color: #3399ff;">
+                                <span>80%</span>
+                                <small>Love kids</small>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating90" name="love_for_children" value="90">
+                            <label for="rating90" class="rating-label" style="background-color: #0066ff;">
+                                <span>90%</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating100" name="love_for_children" value="100">
+                            <label for="rating100" class="rating-label" style="background-color: #0033cc;">
+                                <span>100%</span>
+                                <small>Adore them</small>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desired Children -->
+                <div class="form-group">
+                    <label for="desired-children" class="form-label">
+                        <i class="fas fa-baby"></i>
+                        <span class="label-text">How many children do you wish to have?</span>
+                    </label>
+                    <input type="text" id="desired-children" name="desired_children" 
+                           placeholder="e.g., None, Adopt, 2, 3+, etc."
+                           class="form-input">
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="personality-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="emotional-state-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 7: EMOTIONAL STATE ===== -->
+            <section id="emotional-state-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Emotional State in Relationships</h2>
+                        <p class="section-subtitle">Select your highest level of intimacy</p>
+                    </div>
+                </div>
+
+                <div class="card-container emotion-grid">
+                    <!-- Joy -->
+                    <div class="emotion-card" data-emotion="Joy">
+                        <div class="emotion-badge joy-badge">
+                            <i class="fas fa-laugh-beam"></i>
+                            Joy
+                        </div>
+                        <div class="card-content">
+                            <h4>Positive Emotional State</h4>
+                            <p>A positive emotional state characterized by feelings of happiness, delight, or pleasure.</p>
+                            <ul class="emotion-traits">
+                                <li><i class="fas fa-check"></i> Happiness</li>
+                                <li><i class="fas fa-check"></i> Delight</li>
+                                <li><i class="fas fa-check"></i> Contentment</li>
+                            </ul>
+                        </div>
+                        <input type="radio" name="emotional_state" value="Joy" class="emotion-radio">
+                    </div>
+
+                    <!-- Euphoria -->
+                    <div class="emotion-card" data-emotion="Euphoria">
+                        <div class="emotion-badge euphoria-badge">
+                            <i class="fas fa-star"></i>
+                            Euphoria
+                        </div>
+                        <div class="card-content">
+                            <h4>Intense Happiness</h4>
+                            <p>A state of intense happiness, excitement, or triumph, often with elation or satisfaction.</p>
+                            <ul class="emotion-traits">
+                                <li><i class="fas fa-check"></i> Excitement</li>
+                                <li><i class="fas fa-check"></i> Elation</li>
+                                <li><i class="fas fa-check"></i> Triumph</li>
+                            </ul>
+                        </div>
+                        <input type="radio" name="emotional_state" value="Euphoria" class="emotion-radio">
+                    </div>
+
+                    <!-- Ecstasy -->
+                    <div class="emotion-card" data-emotion="Ecstasy">
+                        <div class="emotion-badge ecstasy-badge">
+                            <i class="fas fa-fire"></i>
+                            Ecstasy
+                        </div>
+                        <div class="card-content">
+                            <h4>Overwhelming Joy</h4>
+                            <p>A state of euphoric happiness or excitement, often with exhilaration, elation, or thrill.</p>
+                            <ul class="emotion-traits">
+                                <li><i class="fas fa-check"></i> Exhilaration</li>
+                                <li><i class="fas fa-check"></i> Thrill</li>
+                                <li><i class="fas fa-check"></i> Bliss</li>
+                            </ul>
+                        </div>
+                        <input type="radio" name="emotional_state" value="Ecstasy" class="emotion-radio">
+                    </div>
+
+                    <!-- Rapture -->
+                    <div class="emotion-card" data-emotion="Rapture">
+                        <div class="emotion-badge rapture-badge">
+                            <i class="fas fa-heart-circle-plus"></i>
+                            Rapture
+                        </div>
+                        <div class="card-content">
+                            <h4>All-Consuming Passion</h4>
+                            <p>A state of intense, all-consuming passion and love, with deep attachment and affection.</p>
+                            <ul class="emotion-traits">
+                                <li><i class="fas fa-check"></i> Passion</li>
+                                <li><i class="fas fa-check"></i> Deep Attachment</li>
+                                <li><i class="fas fa-check"></i> Complete Love</li>
+                            </ul>
+                        </div>
+                        <input type="radio" name="emotional_state" value="Rapture" class="emotion-radio">
+                    </div>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="family-prefs-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="phobias-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 8: PHOBIAS ===== -->
+            <section id="phobias-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Where is your fear?</h2>
+                        <p class="section-subtitle">Select up to 2 top categories of phobias</p>
+                    </div>
+                </div>
+
+                <div class="card-container phobia-grid">
+                    <!-- BII Phobias -->
+                    <div class="phobia-card" data-phobia="BII Phobias">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <h3 class="card-title">Blood-Injury-Injection</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-skull-crossbones"></i> Trypanophobia (Needles)</li>
+                            <li><i class="fas fa-tint"></i> Hemophobia (Blood)</li>
+                            <li><i class="fas fa-tooth"></i> Dentophobia (Dentists)</li>
+                            <li><i class="fas fa-user-injured"></i> Traumatophobia (Injury)</li>
+                            <li><i class="fas fa-cut"></i> Tomophobia (Surgery)</li>
+                        </ul>
+                        <div class="card-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Medical-related fears
+                        </div>
+                        <input type="checkbox" name="phobias[]" value="BII Phobias" class="card-checkbox">
+                    </div>
+
+                    <!-- Situational Phobias -->
+                    <div class="phobia-card" data-phobia="Situational Phobias">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-elevator"></i>
+                            </div>
+                            <h3 class="card-title">Situational Fears</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-box"></i> Claustrophobia (Closed spaces)</li>
+                            <li><i class="fas fa-plane"></i> Aerophobia (Flying)</li>
+                            <li><i class="fas fa-arrow-up"></i> Elevaphobia (Elevators)</li>
+                            <li><i class="fas fa-expand"></i> Agoraphobia (Open spaces)</li>
+                            <li><i class="fas fa-car"></i> Driving phobia</li>
+                        </ul>
+                        <div class="card-warning">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Situation-based fears
+                        </div>
+                        <input type="checkbox" name="phobias[]" value="Situational Phobias" class="card-checkbox">
+                    </div>
+
+                    <!-- Natural Environment Phobias -->
+                    <div class="phobia-card" data-phobia="Natural Phobias">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h3 class="card-title">Natural Environments</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-mountain"></i> Acrophobia (Heights)</li>
+                            <li><i class="fas fa-bolt"></i> Astraphobia (Thunderstorms)</li>
+                            <li><i class="fas fa-water"></i> Hydrophobia (Water)</li>
+                            <li><i class="fas fa-moon"></i> Nyctophobia (Darkness)</li>
+                            <li><i class="fas fa-water"></i> Thalassophobia (Sea)</li>
+                        </ul>
+                        <div class="card-warning">
+                            <i class="fas fa-tree"></i>
+                            Nature-related fears
+                        </div>
+                        <input type="checkbox" name="phobias[]" value="Natural Phobias" class="card-checkbox">
+                    </div>
+
+                    <!-- Animal Phobias -->
+                    <div class="phobia-card" data-phobia="Animal Phobias">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-spider"></i>
+                            </div>
+                            <h3 class="card-title">Animals & Insects</h3>
+                        </div>
+                        <ul class="card-list">
+                            <li><i class="fas fa-spider"></i> Arachnophobia (Spiders)</li>
+                            <li><i class="fas fa-dog"></i> Cynophobia (Dogs)</li>
+                            <li><i class="fas fa-snake"></i> Ophidiophobia (Snakes)</li>
+                            <li><i class="fas fa-bug"></i> Entomophobia (Insects)</li>
+                            <li><i class="fas fa-dove"></i> Ornithophobia (Birds)</li>
+                        </ul>
+                        <div class="card-warning">
+                            <i class="fas fa-paw"></i>
+                            Animal-related fears
+                        </div>
+                        <input type="checkbox" name="phobias[]" value="Animal Phobias" class="card-checkbox">
+                    </div>
+                </div>
+
+                <div class="selection-counter">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Selected: <strong id="phobias-count">0</strong>/2</span>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="emotional-state-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="zodiac-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 9: ZODIAC ===== -->
+            <section id="zodiac-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Astrological Information</h2>
+                        <p class="section-subtitle">Your cosmic connections</p>
+                    </div>
+                </div>
+
+                <div class="grid-container responsive-grid">
+                    <!-- Zodiac Sign -->
+                    <div class="form-group">
+                        <label for="zodiac-sign" class="form-label">
+                            <i class="fas fa-star"></i>
+                            <span class="label-text">Zodiac Sign</span>
+                        </label>
+                        <select id="zodiac-sign" name="zodiac_sign" class="form-select">
+                            <option value="">Select your sign</option>
+                            <option value="aries">♈ Aries (Mar 21 - Apr 19)</option>
+                            <option value="taurus">♉ Taurus (Apr 20 - May 20)</option>
+                            <option value="gemini">♊ Gemini (May 21 - Jun 20)</option>
+                            <option value="cancer">♋ Cancer (Jun 21 - Jul 22)</option>
+                            <option value="leo">♌ Leo (Jul 23 - Aug 22)</option>
+                            <option value="virgo">♍ Virgo (Aug 23 - Sep 22)</option>
+                            <option value="libra">♎ Libra (Sep 23 - Oct 22)</option>
+                            <option value="scorpio">♏ Scorpio (Oct 23 - Nov 21)</option>
+                            <option value="sagittarius">♐ Sagittarius (Nov 22 - Dec 21)</option>
+                            <option value="capricorn">♑ Capricorn (Dec 22 - Jan 19)</option>
+                            <option value="aquarius">♒ Aquarius (Jan 20 - Feb 18)</option>
+                            <option value="pisces">♓ Pisces (Feb 19 - Mar 20)</option>
+                        </select>
+                    </div>
+
+                    <!-- Astrology Belief -->
+                    <div class="form-group">
+                        <label for="astrology-belief" class="form-label">
+                            <i class="fas fa-crystal-ball"></i>
+                            <span class="label-text">Do you believe astrology influences love?</span>
+                        </label>
+                        <select id="astrology-belief" name="astrology_belief" class="form-select">
+                            <option value="">Select your belief</option>
+                            <option value="strongly-believe">Strongly believe</option>
+                            <option value="somewhat-believe">Somewhat believe</option>
+                            <option value="neutral">Neutral / Not sure</option>
+                            <option value="somewhat-doubt">Somewhat doubt</option>
+                            <option value="strongly-doubt">Strongly doubt / Don't believe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Soulmate Belief -->
+                <div class="form-group">
+                    <label for="soulmate-belief" class="form-label">
+                        <i class="fas fa-heart-circle-check"></i>
+                        <span class="label-text">Do you believe in soulmates?</span>
+                    </label>
+                    <textarea id="soulmate-belief" name="soulmate_belief" 
+                              placeholder="Share your thoughts on soulmates, twin flames, or destined love..."
+                              class="form-textarea"></textarea>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="section-navigation">
+                    <button type="button" class="nav-btn prev-btn" data-prev="phobias-section">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="nav-btn next-btn" data-next="partner-prefs-section">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 10: IDEAL PARTNER PREFERENCES ===== -->
+            <section id="partner-prefs-section" class="form-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="section-title">
+                        <h2>Ideal Partner Preferences</h2>
+                        <p class="section-subtitle">Describe your perfect match</p>
+                    </div>
+                </div>
+
+                <!-- General Preferences -->
+                <div class="form-group">
+                    <label for="time-with-partner" class="form-label">
+                        <i class="fas fa-clock"></i>
+                        <span class="label-text">How do you envision spending time with a partner?</span>
+                    </label>
+                    <textarea id="time-with-partner" name="time_with_partner" 
+                              placeholder="e.g., Travel adventures, cozy home activities, social events, outdoor adventures..."
+                              class="form-textarea"></textarea>
+                </div>
+
+                <div class="grid-container responsive-grid">
+                    <!-- Marry someone with children -->
+                    <div class="form-group">
+                        <label for="marry-with-children" class="form-label">
+                            <i class="fas fa-child"></i>
+                            <span class="label-text">Would you marry someone with children?</span>
+                        </label>
+                        <select id="marry-with-children" name="marry_with_children" class="form-select">
+                            <option value="">Select option</option>
+                            <option value="no">No, prefer no children</option>
+                            <option value="yes">Yes, open to it</option>
+                            <option value="conditional">Yes, on certain conditions</option>
+                            <option value="prefer">Prefer someone with children</option>
+                        </select>
+                    </div>
+
+                    <!-- Past matters -->
+                    <div class="form-group">
+                        <label for="past-matters" class="form-label">
+                            <i class="fas fa-history"></i>
+                            <span class="label-text">Does someone's past matter to you?</span>
+                        </label>
+                        <select id="past-matters" name="past_matters" class="form-select">
+                            <option value="">Select option</option>
+                            <option value="not-important">Not important</option>
+                            <option value="somewhat-important">Somewhat important</option>
+                            <option value="very-important">Very important</option>
+                            <option value="depends">Depends on the context</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Physical Preferences -->
+                <h3 class="subsection-title">
+                    <i class="fas fa-user-tag"></i>
+                    Physical Preferences
+                </h3>
+                <div class="grid-container responsive-grid">
+                    <!-- Skin Tone -->
+                    <div class="form-group">
+                        <label for="partner-skin-tone" class="form-label">
+                            <i class="fas fa-palette"></i>
+                            <span>Skin Tone / Color</span>
+                        </label>
+                        <input type="text" id="partner-skin-tone" name="partner_skin_tone" 
+                               placeholder="e.g., Light, Medium, Dark, Any"
+                               class="form-input">
+                    </div>
+
+                    <!-- Age Range -->
+                    <div class="form-group">
+                        <label for="partner-age-range" class="form-label">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Age Range</span>
+                        </label>
+                        <input type="text" id="partner-age-range" name="partner_age_range" 
+                               placeholder="e.g., 25-35, 30-40, etc."
+                               class="form-input">
+                    </div>
+
+                    <!-- Hair Color -->
+                    <div class="form-group">
+                        <label for="partner-hair-color" class="form-label">
+                            <i class="fas fa-user-hair"></i>
+                            <span>Hair Color</span>
+                        </label>
+                        <input type="text" id="partner-hair-color" name="partner_hair_color" 
+                               placeholder="e.g., Black, Brown, Blonde, Any"
+                               class="form-input">
+                    </div>
+
+                    <!-- Eye Color -->
+                    <div class="form-group">
+                        <label for="partner-eye-color" class="form-label">
+                            <i class="fas fa-eye"></i>
+                            <span>Eye Color</span>
+                        </label>
+                        <input type="text" id="partner-eye-color" name="partner_eye_color" 
+                               placeholder="e.g., Brown, Blue, Green, Any"
+                               class="form-input">
+                    </div>
+
+                    <!-- Fashion Sense -->
+                    <div class="form-group">
+                        <label for="partner-fashion-sense" class="form-label">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Fashion Sense</span>
+                        </label>
+                        <input type="text" id="partner-fashion-sense" name="partner_fashion_sense" 
+                               placeholder="e.g., Casual, Formal, Bohemian, Stylish"
+                               class="form-input">
+                    </div>
+
+                    <!-- Voice Tone -->
+                    <div class="form-group">
+                        <label for="partner-voice-tone" class="form-label">
+                            <i class="fas fa-microphone"></i>
+                            <span>Voice Tone</span>
+                        </label>
+                        <input type="text" id="partner-voice-tone" name="partner_voice_tone" 
+                               placeholder="e.g., Deep, Soft, Energetic, Calm"
+                               class="form-input">
+                    </div>
+
+                    <!-- Body Type -->
+                    <div class="form-group">
+                        <label for="partner-body-type" class="form-label">
+                            <i class="fas fa-user"></i>
+                            <span>Body Type</span>
+                        </label>
+                        <input type="text" id="partner-body-type" name="partner_body_type" 
+                               placeholder="e.g., Athletic, Slim, Curvy, Average"
+                               class="form-input">
+                    </div>
+
+                    <!-- Height Range -->
+                    <div class="form-group">
+                        <label for="partner-height-range" class="form-label">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Height Range</span>
+                        </label>
+                        <input type="text" id="partner-height-range" name="partner_height_range" 
+                               placeholder="e.g., 5'5\" - 6'0\", 5'0\" - 5'8\", etc."
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- AURA QUIZ -->
+                <div class="aura-quiz-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-aura"></i>
+                        Animal Aura Quiz
+                    </h3>
+                    <p class="subsection-description">Which animal aura resonates with you?</p>
+
+                    <input type="hidden" id="aura-type-input" name="aura_type" value="">
+
+                    <div class="aura-cards-grid">
+                        <!-- Red Aura -->
+                        <div class="aura-card red-aura" data-aura="red">
+                            <div class="aura-card-header">
+                                <h4>🔥 Red Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-lion"></i>
+                                    <i class="fas fa-wolf"></i>
+                                    <i class="fas fa-horse"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Passion, Energy, Strength</li>
+                                <li><strong>Energy:</strong> Fiery, Dynamic, Powerful</li>
+                                <li><strong>Style:</strong> Leader, Protector, Adventurer</li>
+                            </ul>
+                        </div>
+
+                        <!-- Orange Aura -->
+                        <div class="aura-card orange-aura" data-aura="orange">
+                            <div class="aura-card-header">
+                                <h4>🍊 Orange Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-monkey"></i>
+                                    <i class="fas fa-dolphin"></i>
+                                    <i class="fas fa-dove"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Creativity, Playfulness, Enthusiasm</li>
+                                <li><strong>Energy:</strong> Vibrant, Social, Joyful</li>
+                                <li><strong>Style:</strong> Creative, Social, Fun-loving</li>
+                            </ul>
+                        </div>
+
+                        <!-- Yellow Aura -->
+                        <div class="aura-card yellow-aura" data-aura="yellow">
+                            <div class="aura-card-header">
+                                <h4>🌞 Yellow Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-dove"></i>
+                                    <i class="fas fa-kiwi-bird"></i>
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Optimism, Warmth, Joy</li>
+                                <li><strong>Energy:</strong> Sunny, Positive, Light</li>
+                                <li><strong>Style:</strong> Optimistic, Intellectual, Warm</li>
+                            </ul>
+                        </div>
+
+                        <!-- Green Aura -->
+                        <div class="aura-card green-aura" data-aura="green">
+                            <div class="aura-card-header">
+                                <h4>🌿 Green Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-deer"></i>
+                                    <i class="fas fa-turtle"></i>
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Growth, Harmony, Balance</li>
+                                <li><strong>Energy:</strong> Grounded, Nurturing, Healing</li>
+                                <li><strong>Style:</strong> Peaceful, Balanced, Growth-oriented</li>
+                            </ul>
+                        </div>
+
+                        <!-- Blue Aura -->
+                        <div class="aura-card blue-aura" data-aura="blue">
+                            <div class="aura-card-header">
+                                <h4>💙 Blue Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-whale"></i>
+                                    <i class="fas fa-dove"></i>
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Calm, Communication, Trust</li>
+                                <li><strong>Energy:</strong> Peaceful, Expressive, Loyal</li>
+                                <li><strong>Style:</strong> Communicator, Peacemaker, Trustworthy</li>
+                            </ul>
+                        </div>
+
+                        <!-- Indigo Aura -->
+                        <div class="aura-card indigo-aura" data-aura="indigo">
+                            <div class="aura-card-header">
+                                <h4>🌀 Indigo Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-cat"></i>
+                                    <i class="fas fa-owl"></i>
+                                    <i class="fas fa-bat"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Intuition, Mystery, Insight</li>
+                                <li><strong>Energy:</strong> Mystical, Intuitive, Deep</li>
+                                <li><strong>Style:</strong> Intuitive, Mysterious, Wise</li>
+                            </ul>
+                        </div>
+
+                        <!-- Violet Aura -->
+                        <div class="aura-card violet-aura" data-aura="violet">
+                            <div class="aura-card-header">
+                                <h4>🔮 Violet Aura</h4>
+                                <div class="aura-animals">
+                                    <i class="fas fa-butterfly"></i>
+                                    <i class="fas fa-dove"></i>
+                                    <i class="fas fa-feather"></i>
+                                </div>
+                            </div>
+                            <ul class="aura-traits">
+                                <li><strong>Traits:</strong> Spirituality, Transformation, Creativity</li>
+                                <li><strong>Energy:</strong> Magical, Transformative, Inspiring</li>
+                                <li><strong>Style:</strong> Spiritual, Creative, Visionary</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="aura-result" class="aura-result">
+                        <div class="result-header">
+                            <h4><i class="fas fa-magic"></i> Your Aura: <span id="aura-name">Select an aura above</span></h4>
+                        </div>
+                        <div class="result-description">
+                            <p id="aura-description">Choose an aura to see your personality description</p>
+                            <ul id="aura-details" class="aura-details"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personality & Character -->
+                <h3 class="subsection-title">
+                    <i class="fas fa-brain"></i>
+                    Personality & Character
+                </h3>
+                <div class="grid-container responsive-grid">
+                    <div class="form-group">
+                        <label for="partner-personality-traits" class="form-label">
+                            <i class="fas fa-star"></i>
+                            <span>Most attractive personality traits?</span>
+                        </label>
+                        <input type="text" id="partner-personality-traits" name="partner_personality_traits" 
+                               placeholder="e.g., Kind, Confident, Humorous, Ambitious"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-intro-extro" class="form-label">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Introverted or extroverted?</span>
+                        </label>
+                        <input type="text" id="partner-intro-extro" name="partner_intro_extro" 
+                               placeholder="e.g., Introverted, Extroverted, Ambivert"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-playful-serious" class="form-label">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Playful or serious?</span>
+                        </label>
+                        <input type="text" id="partner-playful-serious" name="partner_playful_serious" 
+                               placeholder="e.g., Playful, Serious, Balanced"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-leader-supportive" class="form-label">
+                            <i class="fas fa-chess-king"></i>
+                            <span>Leader-type or supportive?</span>
+                        </label>
+                        <input type="text" id="partner-leader-supportive" name="partner_leader_supportive" 
+                               placeholder="e.g., Leader, Supportive, Equal partner"
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Attractive Features -->
+                <div class="form-group">
+                    <label for="partner-attractive-features" class="form-label">
+                        <i class="fas fa-eye"></i>
+                        <span class="label-text">Which physical features do you find most attractive?</span>
+                    </label>
+                    <input type="text" id="partner-attractive-features" name="partner_attractive_features" 
+                           placeholder="e.g., Eyes, Smile, Hair, Body-shape, Hands, Voice, Style"
+                           class="form-input">
+                </div>
+
+                <!-- Lifestyle & Habits -->
+                <h3 class="subsection-title">
+                    <i class="fas fa-running"></i>
+                    Lifestyle & Habits
+                </h3>
+                <div class="grid-container responsive-grid">
+                    <div class="form-group">
+                        <label for="partner-lifestyle" class="form-label">
+                            <i class="fas fa-hiking"></i>
+                            <span>Active/outdoorsy or homebody?</span>
+                        </label>
+                        <input type="text" id="partner-lifestyle" name="partner_lifestyle" 
+                               placeholder="e.g., Active, Homebody, Balanced"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-health-fitness" class="form-label">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Importance of health & fitness?</span>
+                        </label>
+                        <input type="text" id="partner-health-fitness" name="partner_health_fitness" 
+                               placeholder="e.g., Very important, Somewhat, Not important"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-travel" class="form-label">
+                            <i class="fas fa-plane"></i>
+                            <span>Must enjoy traveling?</span>
+                        </label>
+                        <input type="text" id="partner-travel" name="partner_travel" 
+                               placeholder="e.g., Must love travel, Optional, Not important"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-sleep-schedule" class="form-label">
+                            <i class="fas fa-bed"></i>
+                            <span>Early bird or night owl?</span>
+                        </label>
+                        <input type="text" id="partner-sleep-schedule" name="partner_sleep_schedule" 
+                               placeholder="e.g., Early bird, Night owl, Doesn't matter"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-planning-style" class="form-label">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Planned or spontaneous?</span>
+                        </label>
+                        <input type="text" id="partner-planning-style" name="partner_planning_style" 
+                               placeholder="e.g., Planner, Spontaneous, Both"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-relationship-dynamic" class="form-label">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Traditional or modern relationship?</span>
+                        </label>
+                        <input type="text" id="partner-relationship-dynamic" name="partner_relationship_dynamic" 
+                               placeholder="e.g., Traditional, Modern, Mixed"
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Relationship Style -->
+                <h3 class="subsection-title">
+                    <i class="fas fa-heartbeat"></i>
+                    Relationship Style
+                </h3>
+                <div class="grid-container responsive-grid">
+                    <div class="form-group">
+                        <label for="partner-attachment-style" class="form-label">
+                            <i class="fas fa-link"></i>
+                            <span>Clingy or independent?</span>
+                        </label>
+                        <input type="text" id="partner-attachment-style" name="partner_attachment_style" 
+                               placeholder="e.g., Independent, Somewhat clingy, Balanced"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-communication-frequency" class="form-label">
+                            <i class="fas fa-comments"></i>
+                            <span>Importance of daily communication?</span>
+                        </label>
+                        <input type="text" id="partner-communication-frequency" name="partner_communication_frequency" 
+                               placeholder="e.g., Very important, Moderate, Not important"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-emotional-expression" class="form-label">
+                            <i class="fas fa-heart"></i>
+                            <span>Emotionally expressive or reserved?</span>
+                        </label>
+                        <input type="text" id="partner-emotional-expression" name="partner_emotional_expression" 
+                               placeholder="e.g., Expressive, Reserved, Balanced"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-conflict-style" class="form-label">
+                            <i class="fas fa-user-shield"></i>
+                            <span>How should conflicts be handled?</span>
+                        </label>
+                        <input type="text" id="partner-conflict-style" name="partner_conflict_style" 
+                               placeholder="e.g., Discuss immediately, Take time to cool off"
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Future & Relationship Goals -->
+                <h3 class="subsection-title">
+                    <i class="fas fa-bullseye"></i>
+                    Future & Relationship Goals
+                </h3>
+                <div class="grid-container responsive-grid">
+                    <div class="form-group">
+                        <label for="relationship-timeline" class="form-label">
+                            <i class="fas fa-hourglass-half"></i>
+                            <span>Ideal relationship timeline?</span>
+                        </label>
+                        <input type="text" id="relationship-timeline" name="relationship_timeline" 
+                               placeholder="e.g., Casual, Long-term, Marriage-focused"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="long-distance-thoughts" class="form-label">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Thoughts on long-distance?</span>
+                        </label>
+                        <input type="text" id="long-distance-thoughts" name="long_distance_thoughts" 
+                               placeholder="e.g., Open to it, Prefer local, Depends"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="relocate-for-love" class="form-label">
+                            <i class="fas fa-truck-moving"></i>
+                            <span>Would you relocate for love?</span>
+                        </label>
+                        <input type="text" id="relocate-for-love" name="relocate_for_love" 
+                               placeholder="e.g., Yes, No, Maybe"
+                               class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-financial-stability" class="form-label">
+                            <i class="fas fa-money-check-alt"></i>
+                            <span>Importance of financial stability?</span>
+                        </label>
+                        <input type="text" id="partner-financial-stability" name="partner_financial_stability" 
+                               placeholder="e.g., Very important, Somewhat, Not important"
+                               class="form-input">
+                    </div>
+                </div>
+
+                <!-- Final Submit Section -->
+                <div class="submit-section">
+                    <!-- Privacy & Security -->
+                    <div class="privacy-box">
+                        <div class="privacy-header">
+                            <i class="fas fa-lock"></i>
+                            <h4>Privacy & Security Guarantee</h4>
+                        </div>
+                        <div class="privacy-content">
+                            <p>✓ Your information is 100% secure and encrypted</p>
+                            <p>✓ Data used exclusively for matching purposes</p>
+                            <p>✓ Never shared with third parties</p>
+                            <p>✓ You can request data deletion anytime</p>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="nav-btn prev-btn" data-prev="zodiac-section">
+                            <i class="fas fa-arrow-left"></i> Previous Section
+                        </button>
+                        <button type="submit" id="submit-button" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="submit-text">Submit Love Match Questionnaire</span>
+                            <div class="submit-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Processing...
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="form-footer">
+                        <div class="footer-content">
+                            <p>
+                                <i class="fas fa-code"></i> 
+                                Crafted with <i class="fas fa-heart" style="color: #e91e63;"></i> by 
+                                <a href="https://baluku.me" target="_blank" class="signature">
+                                    www.baluku.me
+                                </a>
+                            </p>
+                            <p class="footer-note">
+                                Your journey to finding true love begins here
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <!-- ===== PREVIEW SECTION ===== -->
+<section id="preview-section" class="form-section">
+    <div class="section-header">
+        <div class="section-icon">
+            <i class="fas fa-eye"></i>
+        </div>
+        <div class="section-title">
+            <h2>Review Your Submission</h2>
+            <p class="section-subtitle">Review all your information before submitting</p>
+        </div>
+    </div>
+
+    <div class="preview-container">
+        <div class="preview-header">
+            <h3><i class="fas fa-file-alt"></i> Questionnaire Summary</h3>
+            <div class="preview-actions">
+                <button type="button" id="edit-questionnaire" class="preview-btn edit-btn">
+                    <i class="fas fa-edit"></i> Edit Questionnaire
+                </button>
+            </div>
+        </div>
+
+        <div id="preview-content" class="preview-content">
+            <!-- Preview content will be generated here -->
+        </div>
+
+        <div class="preview-footer">
+            <div class="agreement-check">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="privacy-agreement" required>
+                    <span class="checkmark"></span>
+                    <span class="agreement-text">
+                        I confirm that all information provided is accurate and I consent to the 
+                        processing of my data for matchmaking purposes.
+                    </span>
+                </label>
+            </div>
+
+            <div class="preview-navigation">
+                <button type="button" class="nav-btn prev-btn" data-prev="partner-prefs-section">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <button type="button" id="final-submit-btn" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Love Match Questionnaire
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <h3>Processing Your Love Match</h3>
+            <p>Analyzing your responses for the perfect compatibility match...</p>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content success-modal">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Questionnaire Submitted Successfully!</h2>
+            <p>Your Love Match Questionnaire has been sent to <strong>Database</strong>.</p>
+            <p>You will receive match suggestions and compatibility analysis within 24-48 hours.</p>
+            <div class="modal-actions">
+                <button id="close-success" class="modal-btn">
+                    <i class="fas fa-times"></i> Close
+                </button>
+                <button id="new-submission" class="modal-btn secondary">
+                    <i class="fas fa-redo"></i> Submit Another
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal-overlay">
+        <div class="modal-content error-modal">
+            <div class="modal-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h2>Submission Error</h2>
+            <p id="error-message">There was an issue submitting your questionnaire.</p>
+            <div class="modal-actions">
+                <button id="close-error" class="modal-btn">
+                    <i class="fas fa-redo"></i> Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="mobile-nav-btn" id="mobile-prev">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <div class="mobile-progress">
+            <div class="progress-indicator" id="mobile-progress"></div>
+        </div>
+        <button class="mobile-nav-btn" id="mobile-next">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+     <script src="functions/test.js"></script>
+     <script src="functions/submit.js"></script>
+    <script>
+        // Set timestamp on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('timestamp').value = new Date().toISOString();
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

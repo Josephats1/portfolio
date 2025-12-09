@@ -115,7 +115,7 @@ select,
 textarea {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ebe6e6;
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
@@ -434,3 +434,6 @@ textarea {
 .blue { background: #ddffff; color: #00008b; }
 .indigo { background: #ddddff; color: #4b0082; }
 .violet { background: #f5ddff; color: #9400d3; }
+#aura-quiz-container{
+    display: block;
+}
